@@ -2,6 +2,8 @@
 
 This projects includes three different methods for generating Fibonacci numbers at a given index. Recursion, Recursion with memoization and Binet’s Fibonacci number formula in both Swift and Objective-C. 
 
+Medium Post: [Fibonacci Sequence](https://medium.com/@rwgrier/fibonacci-sequence-cf1feece4d62#.iivkya6os)
+
 ## How To Run
 
 The Swift examples are in Xcode Playgrounds. All you need is Xcode 7.x to run. 
