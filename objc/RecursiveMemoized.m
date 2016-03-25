@@ -29,10 +29,12 @@
 - (NSUInteger) fibonacciAtIndex: (NSUInteger) index {
 	NSNumber *memoized = self.memoized[@(index)];
 	if (memoized != nil) {
+		self.count++;
 		return [memoized unsignedIntegerValue];
 	}
 	
 	if (index < 2) {
+		self.count++;
 		return index;
 	}
 	

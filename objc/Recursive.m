@@ -25,6 +25,7 @@
 }
 - (NSUInteger) fibonacciAtIndex: (NSUInteger) index {
 	if (index < 2) {
+        self.count++;
 		return index;
 	}
 	
