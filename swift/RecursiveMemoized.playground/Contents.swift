@@ -9,7 +9,7 @@ import UIKit
 let knownFibonacciValues: [Int] = [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811 ]
 var memoized: [Int: Int] = [:]
 
-func fibonacciAtIndex(index: Int) -> Int {
+func fibonacciAtIndex(_ index: Int) -> Int {
     if let fibonacci = memoized[index] {
         return fibonacci
     }
@@ -27,7 +27,7 @@ func fibonacciAtIndex(index: Int) -> Int {
 func confirmSequence() -> Bool {
     var valid = true
     
-    for (index, fibonacci) in knownFibonacciValues.enumerate() {
+    for (index, fibonacci) in knownFibonacciValues.enumerated() {
         let test = fibonacciAtIndex(index)
         
         if (test != fibonacci) {
@@ -40,7 +40,7 @@ func confirmSequence() -> Bool {
     return valid
 }
 
-//fibonacciAtIndex(20)
+fibonacciAtIndex(20)
 confirmSequence()
 
 memoized.count
